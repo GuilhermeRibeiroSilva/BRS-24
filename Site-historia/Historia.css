@@ -1,0 +1,289 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+*{
+margin: 0px;
+padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: var(--cor7);
+    font-family: var(--fonte-padrao);
+}
+
+:root{
+    --cor0: #0D0E26;
+    --cor1: #4A5914;
+    --cor2: #D7F205;
+    --cor3: #AABF06;
+    --cor4: #0D0D0D;
+    --cor5: #D9AD2B;
+    --cor6: #2669BF;
+    --cor7: #2A7ABF; 
+    --cor8: #A69B03;
+    --cor9: #8EFA2F;
+    --cor10: #FAE82F;
+    --cor11: #3252F0;
+
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-titulo: "Mukta", sans-serif;
+    --fonte-texto: "Oswald", sans-serif;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background:  var(--cor9);
+    border-radius: 25px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--cor0);
+    border-radius: 25px;
+  }
+  
+.cabeçalho {
+    background-color: var(--cor0);
+    color: var(--cor9);
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
+    font-family: var(--fonte-titulo);
+}
+
+header > p {
+    padding-bottom: 50px;
+    font-size: 7vw;
+    font-family: var(--fonte-titulo);
+}
+
+nav {
+    background-color: var(--cor9);
+    color: var(--cor0);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.336);
+    text-align: center;
+}
+
+nav > a{
+    color: var(--cor0);
+    padding: 3vh;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+    font-size: 4vh;
+    font-family: var(--fonte-texto);
+}
+
+nav > a:hover {
+    background-color: var(--cor0);
+    color: var(--cor9);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.layout-wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min-content, 1fr));
+	grid-auto-rows: minmax(150px, auto);
+	grid-auto-flow: dense;
+	grid-gap: 1em;
+	break-inside: avoid;
+}
+
+.cover-wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+	background: url(imagens/historico\ \ br.png)
+		center center / 100vw auto no-repeat fixed;
+	height: 140vh;
+	object-fit: contain;
+}
+
+p{
+  color: white;
+}
+
+.title {
+    color: var(--cor9);
+}
+
+.headline,
+aside,
+h2 {
+	font-family: "Chakra Petch", sans-serif;
+	text-transform: uppercase;
+}
+
+figure,
+img {
+	width: 100%;
+	max-width: 37.5rem;
+}
+
+figure {
+	position: relative;
+	margin: 0 auto;
+}
+
+img {
+	position: relative;
+	text-align: center;
+	object-fit: contain;
+	padding: 2rem 1rem;
+}
+
+figcaption {
+	position: absolute;
+	background-color: var(--cor9);
+	color: var(--cor0);
+	font-size: 0.65rem;
+	text-transform: uppercase;
+	bottom: 0.75rem;
+	left: 2.75rem;
+	padding: 0.25rem;
+}
+
+.headline {
+	font-weight: 700;
+	font-size: 8rem;
+	line-height: 8rem;
+	text-align: center;
+	color: var(--cor9);
+	text-shadow: 0.0625rem 0.0625rem 0.125rem black, 0.25rem 0.25rem 0 var(--cor2),
+		0.5rem 0.5rem 0 #AABF06, 0.75rem 0.75rem 0.125rem black;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	color: var(--cor9);
+	margin-top: 2rem;
+}
+
+h2 {
+	text-align: left;
+}
+
+
+aside {
+	color: var(--cor9);
+	padding: 4rem 3rem 0 3rem;
+	font-size: 3.25rem;
+	line-height: 3.25rem;
+	text-align: center;
+}
+
+.full-width-span {
+	grid-column: span 2;
+	margin: 0;
+}
+
+.section-1 > p,
+.section-2 > p,
+.section-3 > p {
+	padding-top: 1rem;
+}
+
+.section-1,
+.section-2,
+.section-3 {
+	padding: 3rem;
+	columns: 2 600px;
+	column-gap: 4em;
+	column-rule: 1px ;
+	column-fill: auto;
+}
+
+.section-2,
+.section-3,
+.full-width-span {
+	padding-top: 0;
+}
+
+.section-3 > p:last-of-type {
+	margin-bottom: 3rem;
+}
+
+
+footer {
+    display: block;
+    background-color: var(--cor0);
+    color: var(--cor1);
+    text-align: center;
+}
+
+.footer {
+    font-size: 0.9em;
+}
+
+.footer .principal {
+    padding: 60px 35px 40px 50px;
+}
+
+.footer .menu-footer {
+    margin-bottom: 75px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    text-align: initial;
+}
+
+.footer .menu-footer > li {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+}
+
+.footer .links {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--cor9);
+}
+
+.lista {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer .menu-footer .submenu li {
+    display: block;
+    margin-bottom: 7px;
+    
+}
+
+.footer .footer-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#devs {
+    font-size: 1.1em;
+    background-color: var(--cor9);
+    color: var(--cor0);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

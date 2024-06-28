@@ -1,0 +1,402 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+margin: 0px;
+padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: var(--cor11);
+    font-family: var(--fonte-padrao);
+}
+
+:root{
+    --cor0: #0D0E26;
+    --cor1: #4A5914;
+    --cor2: #D7F205;
+    --cor3: #AABF06;
+    --cor4: #0D0D0D;
+    --cor5: #D9AD2B;
+    --cor6: #2669BF;
+    --cor7: #2A7ABF; 
+    --cor8: #A69B03;
+    --cor9: #8EFA2F;
+    --cor10: #FAE82F;
+    --cor11: #3252F0;
+
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-titulo: "Mukta", sans-serif;
+    --fonte-texto: "Oswald", sans-serif;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background:  var(--cor9);
+    border-radius: 25px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--cor0);
+    border-radius: 25px;
+  }
+  
+
+header {
+    background-color: var(--cor0);
+    color: var(--cor9);
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
+    font-family: var(--fonte-titulo);
+}
+
+header > p {
+    padding-bottom: 50px;
+    font-size: 7vw;
+    font-family: var(--fonte-titulo);
+}
+
+nav {
+    background-color: var(--cor9);
+    color: var(--cor0);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.336);
+    text-align: center;
+}
+
+nav > a{
+    color: var(--cor0);
+    padding: 3vh;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+    font-size: 4vh;
+    font-family: var(--fonte-texto);
+}
+
+nav > a:hover {
+    background-color: var(--cor0);
+    color: var(--cor9);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    background-color: var(--cor11);
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    margin: 50px 20px 50px 20px;
+    border-radius: 25px;
+}
+
+.slider1 {
+    position: relative;
+    overflow: hidden;
+    margin: 50px 20px 50px 20px;
+    border-radius: 25px;
+}
+
+.slides {
+    display: flex;
+    width: 1000%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--cor9);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.slides p {
+    margin-top: 10px;
+    text-align: center;
+    color: var(--cor9);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.slide {
+    width: 100%;
+    height: 350px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.slide1 {
+    background-image: url('imagens/arena\ da\ baixada.png');
+}
+
+.slide2 {
+    background-image: url('imagens/antonio\ accioly.png');
+}
+
+.slide3 {
+    background-image: url('imagens/arena\ mrv.png');
+}
+
+.slide4 {
+    background-image: url('imagens/Arena-Fonte-Nova.jpg');
+}
+
+.slide5 {
+    background-image: url('imagens/nilton-santos.png');
+}
+
+.slide6 {
+    background-image: url('imagens/nabi-abi-chedid.png');
+}
+
+.slide7 {
+    background-image: url('imagens/neo-quimica-arena-itaquera.png');
+}
+
+.slide8 {
+    background-image: url('imagens/Estádio\ Heriberto\ Hülse\ \(Majestoso\).jpg');
+}
+
+.slide9 {
+    background-image: url('imagens/Mineirao.png');
+}
+
+.slide10 {
+    background-image: url('imagens/arena\ pantanal.png');
+}
+
+.slide11 {
+    background-image: url('imagens/Estadio-Maracana-fla.png');
+}
+
+.slide12 {
+    background-image: url('imagens/maracana.jpg');
+}
+
+.slide13 {
+    background-image: url('imagens/castelao.png');
+}
+
+.slide14 {
+    background-image: url('imagens/arena\ gremio.jpg');
+}
+
+.slide15 {
+    background-image: url('imagens/beira-rio.jpg');
+}
+
+.slide16 {
+    background-image: url('imagens/jaconi.jpg');
+}
+
+.slide17 {
+    background-image: url('imagens/allianz-parque.png');
+}
+
+.slide18 {
+    background-image: url('imagens/Estádio_do_Morumbi.jpg');
+}
+
+.slide19 {
+    background-image: url('imagens/Estadio_sao_januario.jpg');
+}
+
+.slide20 {
+    background-image: url('imagens/barradao.jpg');
+}
+
+.slider input[type="radio"] {
+    display: none;
+}
+
+.slider1 input[type="radio"] {
+    display: none;
+}
+
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 30px;
+}
+
+.navigation label {
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    margin-left: 3px;
+    background-color: var(--cor9);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor0);
+    font-size: 12px;
+}
+
+
+#slide-1:checked ~.slides {
+    transform: translateX(0);
+}
+
+#slide-2:checked ~.slides {
+    transform: translateX(-10%);
+}
+
+#slide-3:checked ~.slides {
+    transform: translateX(-20%);
+}
+
+#slide-4:checked ~.slides {
+    transform: translateX(-30%);
+}
+
+#slide-5:checked ~.slides {
+    transform: translateX(-40%);
+}
+
+#slide-6:checked ~.slides {
+    transform: translateX(-50%);
+}
+
+#slide-7:checked ~.slides {
+    transform: translateX(-60%);
+}
+
+#slide-8:checked ~.slides {
+    transform: translateX(-70%);
+}
+
+#slide-9:checked ~.slides {
+    transform: translateX(-80%);
+}
+
+#slide-10:checked ~.slides {
+    transform: translateX(-90%);
+}
+
+#slide-11:checked ~.slides {
+    transform: translateX(0);
+}
+
+#slide-12:checked ~.slides {
+    transform: translateX(-10%);
+}
+
+#slide-13:checked ~.slides {
+    transform: translateX(-20%);
+}
+
+#slide-14:checked ~.slides {
+    transform: translateX(-30%);
+}
+
+#slide-15:checked ~.slides {
+    transform: translateX(-40%);
+}
+
+#slide-16:checked ~.slides {
+    transform: translateX(-50%);
+}
+
+#slide-17:checked ~.slides {
+    transform: translateX(-60%);
+}
+
+#slide-18:checked ~.slides {
+    transform: translateX(-70%);
+}
+
+#slide-19:checked ~.slides {
+    transform: translateX(-80%);
+}
+
+#slide-20:checked ~.slides {
+    transform: translateX(-90%);
+}
+
+
+
+footer {
+    display: block;
+    background-color: var(--cor0);
+    color: var(--cor1);
+    text-align: center;
+}
+
+.footer {
+    font-size: 0.9em;
+}
+
+.footer .principal {
+    padding: 60px 35px 40px 50px;
+}
+
+.footer .menu-footer {
+    margin-bottom: 75px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    text-align: initial;
+}
+
+.footer .menu-footer > li {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+}
+
+.footer .links {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--cor9);
+}
+
+.lista {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer .menu-footer .submenu li {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.footer .footer-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#devs {
+    font-size: 1.1em;
+    background-color: var(--cor9);
+    color: var(--cor0);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
